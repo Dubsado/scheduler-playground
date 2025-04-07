@@ -1,3 +1,9 @@
+import { AuthStatus } from "@/components/AuthStatus";
+
 export default function Home() {
-  return <div>Hello world!</div>;
+  return (
+    <div>
+      <AuthStatus />
+    </div>
+  );
 }
