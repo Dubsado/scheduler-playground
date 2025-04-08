@@ -49,13 +49,18 @@ export function Calendar() {
           </div>
         </div>
 
-        <CalendarGrid days={data.days} onDaySelect={setSelectedDay} />
+        <CalendarGrid
+          days={data.days}
+          workingHours={data.workingHours}
+          onDaySelect={setSelectedDay}
+        />
       </div>
 
       {/* Side Panel */}
       {selectedDay && (
         <TimeSlotPanel
           day={selectedDay}
+          workingHours={data.workingHours}
           isTroubleshooting={isTroubleshooting}
         />
       )}
