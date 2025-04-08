@@ -22,3 +22,9 @@ export interface AvailabilityResponse {
   availableTimezones: string[];
   appointmentTypes?: AppointmentType[];
 }
+
+export interface BrandInfo {
+  name: string;
+  logo: string;
+  primaryColor: string;
+}
