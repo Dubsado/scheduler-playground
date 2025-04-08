@@ -1,9 +1,11 @@
 import { AuthStatus } from "@/components/AuthStatus";
+import { Calendar } from "@/components/Calendar";
 
 export default function Home() {
   return (
-    <div>
+    <main className="min-h-screen">
       <AuthStatus />
-    </div>
+      <Calendar />
+    </main>
   );
 }
